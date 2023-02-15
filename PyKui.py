@@ -1,4 +1,4 @@
-# PyKui demo 2
+# PyKui beta 1
 # Created by: Pau Cava and Paul Cannon
 # The next generation framework to make python graphics simpler and faster
 # Made with pygame
@@ -812,7 +812,9 @@ def printw(windowSurface = pygame.Surface, font = pygame.font.SysFont, text = "N
     printwText = font.render(text, goodQuality, (r, g, b))
     
     blit(windowSurface, printwText, x, y)
-           
+
+pygame.key.get_pressed()
+
 class rule:
     def removeList():
         ### Removes item in rulesArg1 and rulesArg2
