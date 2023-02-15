@@ -31,4 +31,4 @@ pyKui.frameRate.limit(30)
 
 while 1:
     pyKui.simpleUpdate(True, window, 0, 0, 0)
-    main()
+    main() 
