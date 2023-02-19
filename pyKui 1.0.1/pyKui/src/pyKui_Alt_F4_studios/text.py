@@ -70,3 +70,20 @@ def printw(windowSurface = pygame.Surface, font = pygame.font.SysFont, text = "N
     printwText = font.render(str(text), goodQuality, (r, g, b))
     
     blit(windowSurface, printwText, x, y)
+
+def printw2(windowSurface = pygame.Surface, font = pygame.font.SysFont, text = "None", goodQuality = True, textColor = (0, 0, 0), x = 0, y = 0):
+    ### Prints text in the screen
+    
+    global printwText
+
+    r = textColor[0]
+    g = textColor[1]
+    b = textColor[2]
+
+    if (goodQuality != True and goodQuality != False):
+        goodQuality = False
+        warn("var 'goodQuality is not bool'")
+
+    printwText = font.render(str(text), goodQuality, (r, g, b))
+    
+    blit(windowSurface, printwText, x, y)
