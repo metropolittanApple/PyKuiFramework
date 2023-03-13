@@ -1,5 +1,5 @@
 # PyKui tutorials
-## Beta 1
+## 1.0.1
 ### Free for everyone
 
 ---
